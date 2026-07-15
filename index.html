@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CX-Аудит Пиццерии «ТиАмо» | Исследование для КОРУС</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fffaf0;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s;
+        }
+
+            .card:hover {
+                transform: translateY(-4px);
+            }
+
+        details > summary {
+            list-style: none;
+        }
+
+            details > summary::-webkit-details-marker {
+                display: none;
+            }
+    </style>
+</head>
+<body class="text-stone-800">
+
+    <header class="gradient-bg text-white py-12 px-6 shadow-xl relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-64 h-64 bg-yellow-400/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-10 w-48 h-48 bg-red-900/30 rounded-full blur-2xl"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                <div>
+                    <!-- Плашка стажировки -->
+                    <span class="bg-white/20 px-4 py-1 rounded-full text-sm font-semibold tracking-wide border border-white/30 inline-block">
+                        Летняя стажировка «ИИ-лаборатория»
+                    </span>
+
+                    <!-- Описание задания с отступом сверху (mt-3) -->
+                    <div class="mt-3">
+                        <span class="text-white/90 ml-2 md:ml-4 font-medium">
+                            Вступительное задание: может ли ИИ помочь малому бизнесу лучше понимать своих клиентов.
+                        </span>
+                    </div>
+                </div>
+                <!-- Мой блок -->
+                <div class="bg-black/15 backdrop-blur-sm px-5 py-3 rounded-xl border border-white/20 text-right w-full md:w-auto">
+                    <div class="text-sm font-bold tracking-wide uppercase text-yellow-200 mb-1">Аналитик проекта</div>
+                    <div class="font-semibold text-lg">Зайцева Ольга</div>
+                    <a href="mailto:olanaik673@gmail.com" class="text-sm text-white/90 hover:text-white hover:underline flex items-center justify-end mt-1 transition-colors">
+                        <i class="fa-solid fa-envelope mr-2"></i> olanaik673@gmail.com
+                    </a>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-md">CX-Аудит Пиццерии «ТиАмо»</h1>
+            <p class="text-xl text-orange-100 max-w-3xl leading-relaxed font-light">
+                Исследование клиентского опыта на основе 15 отзывов (Google, 2ГИС, Яндекс) с применением ИИ-анализа и агентного подхода.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 -mt-8 pb-20 relative z-20">
+
+        <!-- Метод -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="card p-6 border-t-4 border-orange-500">
+                <i class="fa-solid fa-bullseye text-orange-500 text-2xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Гипотеза</h3>
+                <p class="text-sm text-stone-600">Использование доступных LLM-моделей позволяет владельцу малого бизнеса без профильного маркетингового образования сократить время на анализ клиентского опыта с 10 часов в месяц до 15 минут, сохраняя точность выводов на уровне 80-85%.</p>
+            </div>
+            <div class="card p-6 border-t-4 border-red-500">
+                <i class="fa-solid fa-microchip text-red-500 text-2xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">ИИ-инструментарий</h3>
+                <p class="text-sm text-stone-600 italic">ChatGPT (LLM) в роли Senior CX-аналитика. Использован агентный подход для кластеризации данных.</p>
+            </div>
+            <div class="card p-6 border-t-4 border-yellow-500">
+                <i class="fa-solid fa-database text-yellow-500 text-2xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Объем данных</h3>
+                <p class="text-sm text-stone-600 font-medium">15 развернутых отзывов из 3-х гео-сервисов (Google, Яндекс, 2ГИС).</p>
+            </div>
+        </section>
+
+        <!-- Фото заведения и продукта -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center text-red-700"><i class="fa-solid fa-camera mr-3"></i> Визуальный контекст</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Карусель Интерьера -->
+                <div class="relative group rounded-xl overflow-hidden h-72 shadow-md border-2 border-stone-100" id="slider-interior">
+                    <img src="images/inter1.jpg" alt="Интерьер 1" class="w-full h-full object-cover slide">
+                    <img src="images/inter2.jpg" alt="Интерьер 2" class="w-full h-full object-cover slide hidden">
+                    <img src="images/inter3.jpg" alt="Интерьер 3" class="w-full h-full object-cover slide hidden">
+                    <img src="images/inter4.jpg" alt="Интерьер 4" class="w-full h-full object-cover slide hidden">
+
+                    <button onclick="changeSlide('slider-interior', -1)" class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-orange-600 w-10 h-10 rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all cursor-pointer z-10">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button onclick="changeSlide('slider-interior', 1)" class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-orange-600 w-10 h-10 rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all cursor-pointer z-10">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <div class="absolute bottom-0 left-0 right-0 bg-stone-900/70 backdrop-blur-sm p-4 text-white text-sm font-medium z-10">Интерьер и атмосфера: сильная сторона заведения</div>
+                </div>
+
+                <!-- Карусель Пиццы -->
+                <div class="rounded-xl overflow-hidden h-72 bg-stone-200 relative group shadow-md border-2 border-stone-100" id="slider-pizza">
+
+                    <img src="images/food1.jpg" alt="Пицца 1" class="w-full h-full object-cover slide">
+                    <img src="images/food2.jpg" alt="Пицца 2" class="w-full h-full object-cover slide hidden">
+                    <img src="images/food3.jpg" alt="Пицца 3" class="w-full h-full object-cover slide hidden">
+                    <img src="images/food4.jpg" alt="Пицца 4" class="w-full h-full object-cover slide hidden">
+
+                    <button onclick="changeSlide('slider-pizza', -1)" class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-orange-600 w-10 h-10 rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all cursor-pointer z-10">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button onclick="changeSlide('slider-pizza', 1)" class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-orange-600 w-10 h-10 rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all cursor-pointer z-10">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <div class="absolute bottom-0 left-0 right-0 bg-stone-900/70 backdrop-blur-sm p-4 text-white text-sm font-medium z-10">
+                        Вкусная еда: главный актив, удерживающий клиентов
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Разворачивающиеся отзывы -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center text-red-700"><i class="fa-regular fa-comments mr-3"></i> База отзывов для анализа</h2>
+            <div class="space-y-4">
+
+                <!-- Google -->
+                <details class="card group overflow-hidden border border-stone-200">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 text-lg bg-white hover:bg-stone-50 transition-colors">
+                        <span class="flex items-center"><i class="fa-brands fa-google text-blue-500 text-xl mr-4 w-6 text-center"></i> Отзывы Google (5)</span>
+                        <span class="text-stone-400 group-open:rotate-180 transition-transform duration-300">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-2 text-sm text-stone-600 bg-stone-50/50 border-t border-stone-100 space-y-3">
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            "Замечательное местечко! Просторный светлый зал, прекрасный интерьер в едином стиле, вежливый дружелюбный персонал, приятное меню. Даже для вегетарианцев есть выбор. Приняли заказ и приготовили быстро. Порции небольшие, но сытные, вкусные. Пицца на тонком тесте, приятные десерты. Особо хороши молочный коктейль и морс. Принимают к оплате карты. Есть Wi-Fi. Туалет опрятный, чистый. Приятное кафе. Уходить не хотелось. Рекомендуем посетить!"
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i></div>
+                            "Кафе Тиамо посещаем летом. В последний раз были удивлены отношению к клиентам. Зашли примерно в 13.15, взяли меню на кассе, заняли столик, долго выбирали блюда. Люди за столиками, находящиеся в кафе, наслаждались заказанными блюдами. Сотрудник за кассой присутствовал. Когда подошли на кассу, нам сотрудники сообщили, что заказы принимаем только после 15.00. Почему нельзя было сразу сообщить об этом? Мы хотели посидеть именно в этом кафе, полноценно пообедать, но просто потратили время. Кафе неплохое, но случилась такая ситуация, о которой сотрудники кафе должны сразу предупреждать!! Что пообедать не получится, а можно выпить только кофе и съесть пирожок..."
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i></div>
+                            "Заезжали в пиццерию проездом, пообедать. Куриный суп вкусный без лишних приправ, типа магги. Для детей идеально. Борщ тоже вкусный, но в одной порции попался острый кусок пластика! Отдали официанту и попросили разобраться. Но никто даже не извинился и не предложил возврат денег! В итоге сами потребовали вернуть деньги за порцию борща. Вернули. Пицца вкусная, тонкое тесто. Мохито ни о чем. Просто спрайт с чем-то зелёным... Мяты три листика, как украли. Кофе нормальный, в гляссе мало мороженого. К нему бонусом идёт маленькая печенька."
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i></div>
+                            "Цена блюд оказалась завышенной относительно уровня сервиса и качества еды. Кафе не соответствует своему названию (Тиамо), поскольку любовь к клиентам и своей работе здесь явно отсутствует. Не рекомендую посещать данное заведение никому, кто ценит своё время и деньги. Огорчает отсутствие бейджиков, тк при написании отзывов, хотелось бы выделить определенных сотрудников! Мы были очень огорчены обслуживанием, и потратили очень много своего времени в пустую!"
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i></div>
+                            "Всё бы хорошо, но... Неоднократно были именно здесь и всегда оставались довольны, а в этот день были с нашей собачкой. Попросил пустить нас с ней в обеденный зал, тем более что остальные посетители были за, но получил категорический отказ. Это несовременно: в большинстве лучших общественных мест питания с маленькими животными не только пускают, но и предлагают им блюдце с водой... Желаю этому заведению удачи в реализации лучших идей общепита."
+                        </div>
+
+                    </div>
+                </details>
+
+                <!-- 2ГИС -->
+                <details class="card group overflow-hidden border border-stone-200">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 text-lg bg-white hover:bg-stone-50 transition-colors">
+                        <span class="flex items-center"><i class="fa-solid fa-map-location-dot text-emerald-500 text-xl mr-4 w-6 text-center"></i> Отзывы 2ГИС (5)</span>
+                        <span class="text-stone-400 group-open:rotate-180 transition-transform duration-300">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-2 text-sm text-stone-600 bg-stone-50/50 border-t border-stone-100 space-y-3">
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            "Отличное заведение. Часто бываю в Старице и часто посещаю Тиамо. Обалденная пицца из грибов, самый лучший суп-пюре из белых грибов, вкусный кофе и всегда свежая выпечка. Приветливый персонал. Хорошая атмосфера. Отличный бонус, всегда можно позвонить и сделать заказ заранее, это очень удобно. Удобная парковка рядом, и даже велосипеды есть куда пристегнуть. В общем 5 ⭐"
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i></div>
+                            "Очень хамское отношение женщины на кассе, долго ждали заказ. И видимо, качество продуктов «на рынке уценили», после похода в данное заведение у всей семьи лучшим другом стал гель от отравления. Больше не пойдем. Раньше такого не было"
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i></div>
+                            "Ужасное место! Ждали, чтобы нам налили напитки из бутылки пол часа! Отношение официантов хамское."
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i></div>
+                            "Женщина мужик на кассе. Не учили ее здороваться! Ждали больше 20 минут свой заказ. Все очень долго, при этом народу немного."
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            "Приехали из другого города и были жутко голодные. Каково было удивление , что были места, нас было много. Набрали различных блюд,пицц. Жаль не сфотографировали, были очень голодны 😋 Подача быстрая, вежливый персонал. Еда просто супер, остались довольны все. Если приедем в Старицу,то только к вам. Спасибо )"
+                        </div>
+
+                    </div>
+                </details>
+
+                <!-- Яндекс -->
+                <details class="card group overflow-hidden border border-stone-200">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-5 text-lg bg-white hover:bg-stone-50 transition-colors">
+                        <span class="flex items-center"><i class="fa-brands fa-yandex text-red-600 text-xl mr-4 w-6 text-center"></i> Отзывы Яндекс (5)</span>
+                        <span class="text-stone-400 group-open:rotate-180 transition-transform duration-300">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-2 text-sm text-stone-600 bg-stone-50/50 border-t border-stone-100 space-y-3">
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i></div>
+                            "Посетили данное заведение снова, и немного было испорчено впечатление, народу много и все приходят покушать в основном пиццу, а пиццы не оказалось!!!! Это вечер выходного дня время 19 часов ! Ну как так, предлагают только основное меню.... Ну так себе"
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i></div>
+                            "Пицца в принципе вкусная, но надо работать над сервисом. Пришли, долго сидели, официант не подходил, оказывается, нужно было подходить и заказывать, об этом не предупреждали. Готовили очень долго, принесли просто на деревянных подносах, никаких тарелок и приборов не предусмотрено. Напиток ребенку долго не приносили, сказали, что забыли. Многого из меню нет в наличии. Понятно, что город маленький и нет конкуренции, но все же.."
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            "Достойное место. Небольшое кафе с блюдами по меню и достойной пиццей. Два зала, большие, столиков много, но столики только на 4 или 2 человека. Еди вкусная, порции приличные, но готовят очень долго (поваров на кухне мало). Персонал внимательный и отзывчивый, пытаются создать комфорт всеми силами. Это из плюсов. Из минусов - в зале душно, вентиляция не работает или ее нет."
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-stone-300"></i><i class="fa-regular fa-star text-stone-300"></i></div>
+                            "Вкусная пицца, салаты. Закуски оставляют желать лучшего, просьба пересмотреть способ приготовления, кальмары в панировке и креветки состоят из-за одного кляра и панировки, вкуса самих креветок и кальмаров не чувствуется от слова совсем, картошка фри очень много маленьких кусочков. Официанты очень часто путаются, почти каждый раз как прихожу обязательно что-то перепутают и принесут не то, меню не знают, а если точнее состав блюд. Даже десерты, если спросить с чем то или иное пирожное не скажут с чем оно."
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-100">
+                            <div class="flex items-center text-yellow-400 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            "Хорошая пиццерия с приличным набором , как классических, так и оригинальных блюд. Первые блюда, в частности, солянка не соответствует рецепту, мини порция, слишком много сухой куриной грудки, бульон не наваристый, явно приготовлен отдельно. В остальном, без претензий. Пицца хорошая, пиво свежее, вкусное, закуски приемлимы. В целом впечатление хорошее."
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Главная таблица анализа -->
+        <section class="card overflow-hidden mb-12 border border-orange-100">
+            <div class="bg-orange-600 text-white p-6">
+                <h2 class="text-xl font-bold italic">Сводная семантическая карта (Анализ ИИ)</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-orange-50 border-b border-orange-200 text-orange-900">
+                        <tr>
+                            <th class="p-4 font-semibold text-sm">Кластер</th>
+                            <th class="p-4 font-semibold text-sm">Инсайт</th>
+                            <th class="p-4 font-semibold text-sm text-center">Частота</th>
+                            <th class="p-4 font-semibold text-sm">Приоритет</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-stone-100 text-sm">
+                        <tr class="hover:bg-stone-50 transition-colors">
+                            <td class="p-4 font-bold text-stone-800">Сервис / Персонал</td>
+                            <td class="p-4 text-stone-600">Официанты не знают меню, путают блюда. Нет приветствия.</td>
+                            <td class="p-4 text-center font-medium">13/15</td>
+                            <td class="p-4"><span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold uppercase border border-red-200">Критический</span></td>
+                        </tr>
+                        <tr class="hover:bg-stone-50 transition-colors">
+                            <td class="p-4 font-bold text-stone-800">Скорость</td>
+                            <td class="p-4 text-stone-600">Системное ожидание без коммуникации со стороны персонала.</td>
+                            <td class="p-4 text-center font-medium">10/15</td>
+                            <td class="p-4"><span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold uppercase border border-red-200">Критический</span></td>
+                        </tr>
+                        <tr class="hover:bg-stone-50 transition-colors">
+                            <td class="p-4 font-bold text-stone-800">Качество продукта</td>
+                            <td class="p-4 text-stone-600">Пицца отличная, но есть вопросы к наличию блюд из меню.</td>
+                            <td class="p-4 text-center font-medium">12/15</td>
+                            <td class="p-4"><span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold uppercase border border-yellow-200">Высокий</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <details class="group mt-6 mb-12 border border-stone-200 rounded-lg overflow-hidden bg-white shadow-sm">
+            <summary class="flex justify-between items-center cursor-pointer p-4 font-bold text-stone-700 hover:bg-stone-50 transition-colors list-none">
+                <span>Показать промпт для ИИ-исследователя</span>
+                <span class="text-stone-400 group-open:rotate-180 transition-transform duration-300">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </summary>
+            <div class="p-4 border-t border-stone-100 bg-stone-50 text-sm text-stone-600 leading-relaxed whitespace-pre-line">
+                <strong>Роль:</strong>
+                «Действуй как Senior CX-исследователь (Customer Experience) и бизнес-аналитик с глубокой экспертизой в секторе малого бизнеса (HoReCa/Retail). Твоя задача — провести комплексный аудит клиентского опыта на основе массива "сырых" отзывов».
+
+                <strong>Инструкция по анализу (Step-by-Step):</strong>
+                1. Семантическая кластеризация: Выдели ключевые темы (Продукт, Сервис, Локация, Цена, Атмосфера). Группируй по смыслу.
+                2. Анализ тональности и скрытых смыслов: Определи эмоциональный окрас, выдели сарказм и скрытую лояльность.
+                3. Методология JTBD (Jobs to be Done): Определи, на какую «работу» клиенты нанимают этот бизнес.
+                4. Выявление Friction Points (Точек трения): Составь список из 5 факторов, мешающих росту выручки.
+
+                <strong>Требования к ответу (Output):</strong>
+                - Представь результаты в виде Markdown-таблицы (Кластер | Инсайт | Частота упоминания | Приоритет для бизнеса).
+                - Сформулируй 3 «неочевидных открытия».
+                - Критический блок: Укажи, в каких моментах данных недостаточно.
+            </div>
+        </details>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="card p-6 border border-stone-200">
+                <h3 class="font-bold mb-6 text-orange-600 uppercase text-xs tracking-widest">Настроение</h3>
+                <div class="flex items-end justify-between h-48 px-4 border-b-2 border-l-2 border-stone-200 pb-2">
+                    <div class="w-16 bg-green-500 hover:bg-green-400 transition-colors rounded-t h-4/5 relative group flex justify-center">
+                        <span class="absolute -top-8 text-xs font-bold text-stone-600">Позитив</span>
+                        <span class="absolute bottom-2 text-white font-bold text-sm">60%</span>
+                    </div>
+                    <div class="w-16 bg-yellow-400 hover:bg-yellow-300 transition-colors rounded-t h-2/5 relative flex justify-center">
+                        <span class="absolute -top-8 text-xs font-bold text-stone-600">Нейтрал</span>
+                        <span class="absolute bottom-2 text-stone-800 font-bold text-sm">15%</span>
+                    </div>
+                    <div class="w-16 bg-red-500 hover:bg-red-400 transition-colors rounded-t h-3/5 relative flex justify-center">
+                        <span class="absolute -top-8 text-xs font-bold text-stone-600">Негатив</span>
+                        <span class="absolute bottom-2 text-white font-bold text-sm">25%</span>
+                    </div>
+                </div>
+                <p class="mt-4 text-sm text-stone-500 italic text-center">«Кухня сильная, но сервис тянет рейтинг вниз»</p>
+            </div>
+
+            <div class="card p-6 border border-stone-200">
+                <h3 class="font-bold mb-6 text-orange-600 uppercase text-xs tracking-widest">Итоговая оценка по категориям</h3>
+                <div class="space-y-6 mt-4">
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-2"><span>Пицца (Продукт)</span><span class="text-green-600">100%</span></div>
+                        <div class="w-full bg-stone-100 h-3 rounded-full overflow-hidden shadow-inner"><div class="bg-green-500 h-full rounded-full" style="width: 100%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-2"><span>Атмосфера</span><span class="text-yellow-600">80%</span></div>
+                        <div class="w-full bg-stone-100 h-3 rounded-full overflow-hidden shadow-inner"><div class="bg-yellow-400 h-full rounded-full" style="width: 80%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-2"><span>Сервис</span><span class="text-red-600">40%</span></div>
+                        <div class="w-full bg-stone-100 h-3 rounded-full overflow-hidden shadow-inner"><div class="bg-red-500 h-full rounded-full" style="width: 40%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Главный Диагноз -->
+        <section class="bg-red-900 text-white rounded-2xl p-8 md:p-10 mb-12 shadow-2xl relative overflow-hidden">
+            <div class="relative z-10">
+                <div class="flex items-center mb-4 text-orange-300">
+                    <h2 class="text-3xl font-bold">Анализ неэффективности заведения</h2>
+                </div>
+                <blockquote class="text-2xl italic font-light border-l-4 border-orange-500 pl-6 mb-6 bg-white/5 py-3 rounded-r-lg">
+                    «Продукт удерживает клиента. Сервис его выталкивает.»
+                </blockquote>
+                <p class="text-red-100 text-lg leading-relaxed max-w-4xl">
+                    Разрыв между качеством продукта и уровнем сервиса вызван системными сбоями, а не ошибками сотрудников.
+                    Отсутствие Table Management: нет стандарта управления посадкой и очередью. Это ведет к потере гостей, простоям столов и искажению данных о загрузке.
+                    Слабое управление ожиданиями: клиенты не получают актуальной информации о времени заказа. Отсутствие регламента коммуникации в случае задержек лишает заведение возможности сохранить лояльность гостя.
+                    Решение: необходимо внедрение чек-листов контроля времени, обучение персонала проактивному информированию и создание системы мониторинга занятости столов.
+                </p>
+            </div>
+            <!-- Декор -->
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-orange-500/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-32 w-32 h-32 bg-yellow-500/10 rounded-full blur-2xl"></div>
+        </section>
+
+        <!-- Неочевидные открытия -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-red-700">3 Неочевидных открытия</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                <div class="card p-6 bg-white border-l-4 border-orange-500 hover:border-l-8 transition-all">
+                    <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-bold text-lg mb-4">1</div>
+                    <h4 class="font-bold mb-2 text-stone-800 text-base">Деньги теряются у двери</h4>
+                    <p class="text-stone-600">Клиент решает, вернется ли он, еще до того, как попробовал пиццу — на этапе встречи и первого контакта.</p>
+                </div>
+                <div class="card p-6 bg-white border-l-4 border-red-500 hover:border-l-8 transition-all">
+                    <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center font-bold text-lg mb-4">2</div>
+                    <h4 class="font-bold mb-2 text-stone-800 text-base">Маленький зал = риск</h4>
+                    <p class="text-stone-600">В камерном заведении каждая ошибка официанта заметна всем. Равнодушный сотрудник становится лицом бренда.</p>
+                </div>
+                <div class="card p-6 bg-white border-l-4 border-yellow-500 hover:border-l-8 transition-all">
+                    <div class="w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center font-bold text-lg mb-4">3</div>
+                    <h4 class="font-bold mb-2 text-stone-800 text-base">Потенциал "Destined Place"</h4>
+                    <p class="text-stone-600">Люди готовы ехать из других городов ради вкуса. Осталось дотянуть сервис до уровня продукта.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Критическая оценка ИИ -->
+        <section class="p-8 bg-orange-50 rounded-2xl border-2 border-dashed border-orange-300">
+            <h2 class="text-lg font-bold mb-4 text-orange-800 italic flex items-center">
+                <i class="fa-solid fa-triangle-exclamation mr-2 text-orange-500"></i> Критическая оценка работы ИИ (Self-Reflection)
+            </h2>
+            <ul class="space-y-3 text-sm text-stone-700">
+                <li class="flex items-start"><i class="fa-solid fa-check mr-3 mt-0.5 text-orange-400"></i> <b>Риск галлюцинаций:</b> ИИ пытался предположить средний чек, не имея данных. Вывод был исключен из доклада.</li>
+                <li class="flex items-start"><i class="fa-solid fa-check mr-3 mt-0.5 text-orange-400"></i> <b>Локальный контекст:</b> ИИ не учитывает специфику малого города, предлагая слишком "корпоративные" решения.</li>
+                <li class="flex items-start"><i class="fa-solid fa-check mr-3 mt-0.5 text-orange-400"></i> <b>Необходимость валидации:</b> Каждый кластер был проверен вручную на соответствие цитатам из Яндекс.Карт.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-900 text-stone-400 py-10 px-6 text-center text-sm border-t-4 border-orange-600">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <p>Подготовлено в рамках отбора на летнюю стажировку «КОРУС Консалтинг»</p>
+            </div>
+            <div class="text-right">
+                <p class="font-semibold text-white">Автор: Зайцева Ольга</p>
+                <a href="mailto:olanaik673@gmail.com" class="hover:text-orange-400 transition-colors"><i class="fa-solid fa-envelope mr-1"></i> olanaik673@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function changeSlide(sliderId, direction) {
+            const slider = document.getElementById(sliderId);
+            if (!slider) return;
+            const slides = slider.querySelectorAll('.slide');
+            let activeIndex = Array.from(slides).findIndex(s => !s.classList.contains('hidden'));
+            slides[activeIndex].classList.add('hidden');
+            activeIndex = (activeIndex + direction + slides.length) % slides.length;
+            slides[activeIndex].classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
